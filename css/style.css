@@ -1,0 +1,240 @@
+:root {
+  --bs-primary: #167347;
+  --bs-primary-rgb: 22, 115, 71;
+  --bs-success: #198754;
+  --bs-success-rgb: 25, 135, 84;
+  --bs-light: #f3f7f1;
+  --bs-light-rgb: 243, 247, 241;
+  --bs-dark: #123524;
+  --bs-dark-rgb: 18, 53, 36;
+
+  --valparai-forest: #123524;
+  --valparai-green: #167347;
+  --valparai-leaf: #6aa84f;
+  --valparai-moss: #9bbf82;
+  --valparai-cream: #f3f7f1;
+  --valparai-gold: #d9a441;
+  --valparai-brown: #725b3a;
+  --valparai-white: #ffffff;
+  --valparai-text: #26352b;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  color: var(--valparai-text);
+  background: var(--valparai-cream);
+}
+
+h1, h2, h3, h4, .navbar-brand {
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+.navbar {
+  background: linear-gradient(90deg, var(--valparai-forest), var(--valparai-green));
+  box-shadow: 0 4px 18px rgba(18, 53, 36, 0.18);
+}
+
+.navbar-brand,
+.nav-link {
+  color: var(--valparai-white) !important;
+  font-weight: 600;
+}
+
+.nav-link {
+  border-radius: 999px;
+  padding: 0.5rem 0.85rem !important;
+  margin: 0.1rem;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  background: rgba(255, 255, 255, 0.16);
+  color: var(--valparai-white) !important;
+}
+
+.hero {
+  min-height: 480px;
+  background:
+    linear-gradient(rgba(18, 53, 36, 0.28), rgba(18, 53, 36, 0.62)),
+    url("../images/hero.jpg") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  color: var(--valparai-white);
+}
+
+.hero-card {
+  max-width: 760px;
+  background: rgba(18, 53, 36, 0.72);
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  border-radius: 1.25rem;
+  padding: 2.25rem;
+  backdrop-filter: blur(4px);
+  box-shadow: 0 16px 40px rgba(18, 53, 36, 0.22);
+}
+
+.hero h1 {
+  font-size: clamp(2.2rem, 5vw, 4.25rem);
+  line-height: 1.05;
+  margin-bottom: 1rem;
+}
+
+.section-heading {
+  color: var(--valparai-forest);
+  font-weight: 700;
+  position: relative;
+  margin-bottom: 1.25rem;
+}
+
+.section-heading::after {
+  content: "";
+  display: block;
+  width: 72px;
+  height: 4px;
+  border-radius: 999px;
+  background: var(--valparai-gold);
+  margin-top: 0.6rem;
+}
+
+.card {
+  border: 0;
+  border-radius: 1rem;
+  box-shadow: 0 8px 24px rgba(18, 53, 36, 0.09);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  overflow: hidden;
+}
+
+.card-hover:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 34px rgba(18, 53, 36, 0.16);
+}
+
+.card-img-top {
+  height: 220px;
+  object-fit: cover;
+}
+
+.side-card {
+  border-left: 5px solid var(--valparai-moss);
+  margin-bottom: 1.25rem;
+}
+
+.side-card .card-header {
+  background: #e8f1e5;
+  color: var(--valparai-forest);
+  font-weight: 700;
+  border: 0;
+}
+
+.btn-valparai,
+.btn-primary {
+  background: var(--valparai-green);
+  color: var(--valparai-white);
+  border: 1px solid var(--valparai-green);
+  border-radius: 999px;
+  padding: 0.7rem 1.35rem;
+  font-weight: 700;
+  box-shadow: 0 8px 18px rgba(22, 115, 71, 0.22);
+}
+
+.btn-valparai:hover,
+.btn-primary:hover {
+  background: var(--valparai-forest);
+  border-color: var(--valparai-forest);
+  color: var(--valparai-white);
+  transform: translateY(-1px);
+}
+
+.fact-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.fact-list li {
+  padding: 0.7rem 0;
+  border-bottom: 1px solid #dde8da;
+}
+
+.fact-list li:last-child {
+  border-bottom: 0;
+}
+
+.place-section {
+  scroll-margin-top: 1.5rem;
+  margin-bottom: 2.25rem;
+}
+
+.place-section img {
+  width: 100%;
+  max-height: 420px;
+  object-fit: cover;
+  border-radius: 1rem;
+  box-shadow: 0 10px 28px rgba(18, 53, 36, 0.14);
+  margin-bottom: 1rem;
+}
+
+.page-header {
+  background: linear-gradient(135deg, #dfeadc, #f6f8f1);
+  border-bottom: 1px solid #d9e5d5;
+  padding: 3.25rem 0 2.25rem;
+}
+
+.page-header h1 {
+  color: var(--valparai-forest);
+  font-weight: 700;
+}
+
+.table-of-contents a {
+  display: block;
+  color: var(--valparai-green);
+  text-decoration: none;
+  padding: 0.42rem 0;
+}
+
+.table-of-contents a:hover {
+  color: var(--valparai-leaf);
+}
+
+.text-success {
+  color: var(--valparai-green) !important;
+}
+
+footer {
+  background: var(--valparai-forest);
+  color: #dce8df;
+  margin-top: 3rem;
+}
+
+@media (max-width: 991.98px) {
+  .navbar .d-flex {
+    justify-content: center;
+  }
+
+  .hero {
+    min-height: 420px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .hero-card {
+    padding: 1.5rem;
+  }
+
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .card-img-top {
+    height: 180px;
+  }
+
+  footer .container,
+  footer .d-flex {
+    flex-direction: column;
+    text-align: center;
+  }
+}
